@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Zusätzliche Schrift & weicher Übergang */
+/* =============================
+   Globale Anpassungen
+   ============================= */
+
 body {
-  @apply font-sans bg-gray-50 text-gray-900;
+  @apply bg-gray-50 text-gray-900 font-sans antialiased transition-all ease-in-out duration-300;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  transition: all 0.3s ease;
+  line-height: 1.6;
+}
+
+/* Optional: Bessere Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold text-purple-800 tracking-tight;
+}
+
+/* Optional: Bildränder abrunden */
+img {
 }
