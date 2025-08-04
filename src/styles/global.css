@@ -3,20 +3,31 @@
 @tailwind utilities;
 
 /* =============================
-   Globale Anpassungen
+   Globale Grundstile
    ============================= */
-
 body {
-  @apply bg-gray-50 text-gray-900 font-sans antialiased transition-all ease-in-out duration-300;
+  @apply font-sans bg-gray-50 text-gray-900 antialiased transition-all ease-in-out duration-300;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
 }
 
-/* Optional: Bessere Headings */
+/* =============================
+   Headings
+   ============================= */
 h1, h2, h3, h4, h5, h6 {
-  @apply font-semibold text-purple-800 tracking-tight;
+  @apply font-semibold tracking-tight text-purple-800;
 }
 
-/* Optional: Bildränder abrunden */
+/* =============================
+   Bilder
+   ============================= */
 img {
+  @apply rounded-md;
+}
+
+/* =============================
+   Buttons (optional für später)
+   ============================= */
+.btn {
+  @apply inline-block px-6 py-2 rounded-full font-semibold transition bg-purple-700 text-white hover:bg-purple-800;
 }
